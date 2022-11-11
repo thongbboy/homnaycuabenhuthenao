@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yêu bé</title> 
+
+	<link rel="icon" href="./img/z3864910381451_b62ac4393accbcbef9e2faf7b1ffb991.jpg">
+
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+
+		
+
+	<div class="center" id="dangky" class="col-md-4  col-sm-12  dangky ">
+		<div class="row">
+			<h3 class="index-title text-center">NGÀY HÔM NAY CỦA EM NHƯ THẾ NÀO ???</h3>	
+					<!--Cách 1: HIỂN THỊ THÔNG BÁO DẠNG POUPUP -->
+					<script type="text/javascript">
+						var submitted=false;
+					</script>
+					<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){alert('Bạn đã gửi thông tin thành công tới hệ thống!');}" style="display: none;"></iframe>
+					<!--Cách 2: HIỂN THỊ THÔNG BÁO DẠNG LINK-->
+					 
+			<div class=" wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+				<script type="text/javascript">
+					var submitted=false;
+				</script>
+				<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){window.location='thongbao.html';}" style="display: none;"></iframe>
+				<!--Cách 2: End HIỂN THỊ THÔNG BÁO DẠNG LINK-->
+				<form onsubmit="submitted=true;" target="hidden_iframe" class="text-left"  role="form" id="ss-form" method="GET" action="https://script.google.com/macros/s/AKfycbwaF4tpQGvA-NZB_GHR5RLDE2URuLsVcV9eke-GFR9K0eUYc3wVrN2G6kqWIDrEGR51/exec">
+					<div class="form-group col-md-10 col-md-offset-1 col-sm-12">
+						<div class="choanhbietdi">
+							<div class="ngaythang">
+								<div id="ngay"></div>
+							<div id="thang"></div>
+							</div>
+							<input id="choanhbiet" title="" required="" class="form-control" placeholder="Cho anh biết đi nè ... " dir="auto" id="hoten" value="" name="hoten" type="text">
+						</div>
+					</div>
+					
+			
+
+					
+					<!-- <div class="form-group col-md-10 col-md-offset-1 col-sm-12">
+						<div>
+							<input title="" required="" class="form-control" placeholder=" Năm sinh... " dir="auto" id="namsinh" value="" name="namsinh" type="date">
+						</div>
+					</div> -->
+					
+					<!-- <div class="clear"></div> -->
+
+					
+					<div class="form-group text-center nutgui">
+							<input class="btn btn-primary dangkybt" id="ss-submit" value="Gửi cho anh nhé " name="submit" type="submit" onclick="thaydoi()">
+						</div>
+
+						<script>
+		
+							/* Add "https://api.ipify.org?format=json" statement
+									this will communicate with the ipify servers in
+									order to retrieve the IP address $.getJSON will
+									load JSON-encoded data from the server using a
+									GET HTTP request */
+										
+							$.getJSON("https://api.ipify.org?format=json", function(data) {
+								
+								// Setting text of element P with id gfg
+								$("#gfg").html(data.ip);
+								$("#hehe").html(data.ip);
+								console.log(data.ip);
+							})
+					
+							xyz = $.getJSON("https://api.ipify.org?format=json")
+							
+							</script>
+				</form>
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	<div class="them">
+		<div class="img-cuachung">
+			<button class="button"  type="button"><a href="./anhchung.html">Nhấn để xem ảnh của chúng mình nè</a></button>
+		</div>
+	</div>
+</body>
+<script src="./index.js"></script>	
+</html>

@@ -1,0 +1,121 @@
+html {
+    background-color: #DEF5E5;
+}
+body{
+    width: 100vw;
+}
+
+.center {
+    width: 50vw;
+    margin: auto;
+}
+.row h3{
+    text-align: center;
+}
+.choanhbietdi{
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+#choanhbiet{
+    width: 20vw;
+    height: 20vh;
+    border-radius: 20px;
+    border: 2px solid #8EC3B0;
+    margin-left: 100px;
+    padding-left: 50px;
+    margin-top: 0%;
+}
+.ngaythang{
+    display: block;
+    margin-left: -20%;
+}
+#ngay{
+    width: 100px;
+    border:2px solid #BCEAD5 ;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #8EC3B0;
+    padding-bottom: 30px;
+    background-color: #BCEAD5;
+}
+#thang{
+    width: 100px;
+    border:2px solid #BCEAD5 ;
+    border-top: 1px solid #8EC3B0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #8EC3B0;
+    padding-bottom: 20px;
+    background-color: #BCEAD5; 
+}
+.nutgui{
+    position: absolute;
+    top: 40vh;
+    left: calc(50vw - 70px);
+}
+#ss-submit{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #BCEAD5;
+    border: 1.5px solid #8EC3B0;
+}
+
+p {
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.them{
+    width: 100vw;
+    margin: auto;
+}
+.img-cuachung{
+    margin: auto;
+    width: 16vw;
+}
+.button{
+    height: 30px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #BCEAD5;
+    border: 1.5px solid #8EC3B0;
+    margin-top: 30vh;
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 400px) {
+    .choanhbietdi {
+        display: block;
+    }
+    #choanhbiet{
+        margin-top: 20px;
+        margin-left: -20vw ;
+        width: 50vw;
+    }
+    .nutgui{
+        top: 60vh;
+        margin-left: 10px;
+    }
+    .button{
+        margin-top: 35vh;
+        width: 170px;
+        height: auto;
+        margin-left: -50px;
+    }
+}
